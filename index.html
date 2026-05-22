@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>NOUR Store | Premium Kids Fashion</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- AOS Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo-wrapper">
+                <div class="logo-icon"><span>N</span></div>
+                <div class="logo-text">NOUR <span>Store</span></div>
+            </a>
+            
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#categories">Boys</a></li>
+                <li><a href="#categories">Girls</a></li>
+                <li><a href="#featured">New Collection</a></li>
+                <li><a href="#offers">Offers</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark Mode">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+                <a href="https://wa.me/201019195954" class="btn btn-primary btn-icon" target="_blank">
+                    <i class="fa-brands fa-whatsapp"></i> Chat
+                </a>
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle Menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container hero-container">
+            <div class="hero-content" data-aos="fade-right">
+                <span class="badge">New Arrivals 2026</span>
+                <h1>Stylish & Comfortable <br>Kids Fashion</h1>
+                <p>Discover the latest trends in kids' clothing. High-quality fabrics designed for all-day play and style.</p>
+                <div class="hero-btns">
+                    <a href="#featured" class="btn btn-primary">Shop Now <i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="#categories" class="btn btn-outline">Explore Collection</a>
+                </div>
+            </div>
+            <div class="hero-image" data-aos="fade-left">
+                <img src="https://live.staticflickr.com/4416/36387263403_c687d92c25.jpg" alt="Stylish Kid">
+                <div class="floating-card top-right">
+                    <i class="fa-solid fa-star"></i>
+                    <span>Top Quality</span>
+                </div>
+                <div class="floating-card bottom-left">
+                    <i class="fa-solid fa-truck-fast"></i>
+                    <span>Fast Delivery</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section id="categories" class="categories section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Shop by Category</h2>
+                <p>Find the perfect outfit for every occasion</p>
+            </div>
+            <div class="grid category-grid">
+                <div class="category-card" data-aos="zoom-in" data-aos-delay="100">
+                    <img src="https://images.unsplash.com/photo-1622290291468-a28f7a7dc6a8?auto=format&fit=crop&w=600&q=80" alt="Boys Outwear">
+                    <div class="category-content">
+                        <h3>Boys Outwear</h3>
+                        <a href="#featured" class="btn btn-sm btn-white">Shop Boys</a>
+                    </div>
+                </div>
+                <div class="category-card" data-aos="zoom-in" data-aos-delay="200">
+                    <img src="https://images.unsplash.com/photo-1519689680058-324335c77eba?auto=format&fit=crop&w=600&q=80" alt="Boys Homewear">
+                    <div class="category-content">
+                        <h3>Boys Homewear</h3>
+                        <a href="#featured" class="btn btn-sm btn-white">Shop Boys</a>
+                    </div>
+                </div>
+                <div class="category-card" data-aos="zoom-in" data-aos-delay="300">
+                    <img src="https://images.unsplash.com/photo-1518831959646-742c3a14ebf7?auto=format&fit=crop&w=600&q=80" alt="Girls Outwear">
+                    <div class="category-content">
+                        <h3>Girls Outwear</h3>
+                        <a href="#featured" class="btn btn-sm btn-white">Shop Girls</a>
+                    </div>
+                </div>
+                <div class="category-card" data-aos="zoom-in" data-aos-delay="400">
+                    <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=600&q=80" alt="Girls Homewear">
+                    <div class="category-content">
+                        <h3>Girls Homewear</h3>
+                        <a href="#featured" class="btn btn-sm btn-white">Shop Girls</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products Section -->
+    <section id="featured" class="featured section bg-light">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Featured Products</h2>
+                <p>Our most popular picks for the season</p>
+                <div class="product-filters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="boys">Boys</button>
+                    <button class="filter-btn" data-filter="girls">Girls</button>
+                </div>
+            </div>
+            
+            <div class="grid product-grid" id="productGrid">
+                <div class="product-card" data-category="boys" data-aos="fade-up" data-aos-delay="100">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1503919545889-aef636e10ad4?auto=format&fit=crop&w=600&q=80" alt="Cool Denim Jacket">
+                        <div class="product-badges"><span class="badge badge-new">New</span></div>
+                        <button class="fav-btn"><i class="fa-regular fa-heart"></i></button>
+                        <div class="product-actions">
+                            <button class="btn btn-primary w-100 add-toast-btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Cool Denim Jacket</h3>
+                        <div class="product-price"><span class="current-price">$45.00</span></div>
+                    </div>
+                </div>
+                <div class="product-card" data-category="girls" data-aos="fade-up" data-aos-delay="200">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1514090458221-65bb69cf63e6?auto=format&fit=crop&w=600&q=80" alt="Floral Summer Dress">
+                        <div class="product-badges"><span class="badge badge-sale">-20%</span></div>
+                        <button class="fav-btn"><i class="fa-regular fa-heart"></i></button>
+                        <div class="product-actions">
+                            <button class="btn btn-primary w-100 add-toast-btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Floral Summer Dress</h3>
+                        <div class="product-price"><span class="current-price">$32.00</span><span class="old-price">$40.00</span></div>
+                    </div>
+                </div>
+                <div class="product-card" data-category="boys" data-aos="fade-up" data-aos-delay="300">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1503945438517-f65904a52ce6?auto=format&fit=crop&w=600&q=80" alt="Casual Striped T-Shirt">
+                        <button class="fav-btn"><i class="fa-regular fa-heart"></i></button>
+                        <div class="product-actions">
+                            <button class="btn btn-primary w-100 add-toast-btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Casual Striped T-Shirt</h3>
+                        <div class="product-price"><span class="current-price">$18.00</span></div>
+                    </div>
+                </div>
+                <div class="product-card" data-category="girls" data-aos="fade-up" data-aos-delay="400">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1471286174890-9c112cbcd89a?auto=format&fit=crop&w=600&q=80" alt="Pink Winter Coat">
+                        <button class="fav-btn"><i class="fa-regular fa-heart"></i></button>
+                        <div class="product-actions">
+                            <button class="btn btn-primary w-100 add-toast-btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Pink Winter Coat</h3>
+                        <div class="product-price"><span class="current-price">$55.00</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="view-all-container">
+                <a href="#" class="btn btn-outline">View All Products <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Offers Section -->
+    <section id="offers" class="offers section">
+        <div class="container">
+            <div class="offer-banner" data-aos="flip-up">
+                <div class="offer-content">
+                    <span class="offer-subtitle">End of Season</span>
+                    <h2>Summer Sale <span>50% OFF</span></h2>
+                    <p>Grab your favorite styles before they are gone!</p>
+                    <div class="countdown" id="countdown">
+                        <div class="time-box"><span id="days">00</span><small>Days</small></div>
+                        <div class="time-box"><span id="hours">00</span><small>Hours</small></div>
+                        <div class="time-box"><span id="minutes">00</span><small>Mins</small></div>
+                        <div class="time-box"><span id="seconds">00</span><small>Secs</small></div>
+                    </div>
+                    <a href="#featured" class="btn btn-primary">Shop Sale Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="features section bg-light">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up"><h2>Why Choose Us</h2><p>We provide the best for your kids</p></div>
+            <div class="grid feature-grid">
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100"><div class="icon-box"><i class="fa-solid fa-medal"></i></div><h3>High Quality</h3><p>Premium fabrics that last longer.</p></div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200"><div class="icon-box"><i class="fa-solid fa-truck-fast"></i></div><h3>Fast Delivery</h3><p>Quick & reliable shipping.</p></div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300"><div class="icon-box"><i class="fa-solid fa-leaf"></i></div><h3>Comfortable Fabric</h3><p>Soft, breathable materials.</p></div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="400"><div class="icon-box"><i class="fa-solid fa-tags"></i></div><h3>Best Prices</h3><p>Affordable luxury for kids.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up"><h2>Happy Customers</h2><p>What parents are saying about NOUR</p></div>
+            <div class="slider-container">
+                <div class="testimonial-slider" id="testimonialSlider">
+                    <div class="testimonial-slide active"><div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div><p class="review-text">"The quality is amazing! My daughter loves her new dresses, they survive every wash."</p><div class="reviewer"><div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div><h4>Sarah Johnson</h4><span>Mother of 2</span></div></div>
+                    <div class="testimonial-slide"><div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div><p class="review-text">"Super fast delivery and accurate size guide. Finally a reliable stylish store for boys!"</p><div class="reviewer"><div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></div><h4>Michael Chen</h4><span>Father of 1</span></div></div>
+                </div>
+                <div class="slider-controls"><button class="slider-btn prev" id="prevSlide"><i class="fa-solid fa-chevron-left"></i></button><button class="slider-btn next" id="nextSlide"><i class="fa-solid fa-chevron-right"></i></button></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery section bg-light">
+        <div class="container"><div class="section-header" data-aos="fade-up"><h2>Our Gallery</h2><p>Follow us on Instagram @NOUR</p></div>
+        <div class="masonry-gallery">
+            <div class="gallery-item large"><img src="https://images.unsplash.com/photo-1519238263530-99aded1128d5?auto=format&fit=crop&w=600&q=80" alt="Gallery"><div class="gallery-overlay"><i class="fa-brands fa-instagram"></i></div></div>
+            <div class="gallery-item"><img src="https://images.unsplash.com/photo-1518831959646-742c3a14ebf7?auto=format&fit=crop&w=400&q=80" alt="Gallery"><div class="gallery-overlay"><i class="fa-brands fa-instagram"></i></div></div>
+            <div class="gallery-item"><img src="https://images.unsplash.com/photo-1503919545889-aef636e10ad4?auto=format&fit=crop&w=400&q=80" alt="Gallery"><div class="gallery-overlay"><i class="fa-brands fa-instagram"></i></div></div>
+            <div class="gallery-item"><img src="https://images.unsplash.com/photo-1622290291468-a28f7a7dc6a8?auto=format&fit=crop&w=400&q=80" alt="Gallery"><div class="gallery-overlay"><i class="fa-brands fa-instagram"></i></div></div>
+            <div class="gallery-item wide"><img src="https://images.unsplash.com/photo-1514090458221-65bb69cf63e6?auto=format&fit=crop&w=800&q=80" alt="Gallery"><div class="gallery-overlay"><i class="fa-brands fa-instagram"></i></div></div>
+        </div></div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+        <div class="container"><div class="section-header" data-aos="fade-up"><h2>Get in Touch</h2><p>We'd love to hear from you</p></div>
+        <div class="contact-wrapper">
+            <div class="contact-info"><div class="info-item"><div class="icon"><i class="fa-solid fa-phone"></i></div><div><h3>Phone</h3><p>01019195954<br>01001212188</p></div></div>
+            <div class="info-item"><div class="icon"><i class="fa-brands fa-whatsapp"></i></div><div><h3>WhatsApp</h3><p>01019195954<br>01001212188</p></div></div>
+            <div class="info-item"><div class="icon"><i class="fa-solid fa-location-dot"></i></div><div><h3>Store Location</h3><p>Markaz Badr, Beheira</p></div></div>
+            <div class="info-item"><div class="icon"><i class="fa-solid fa-store"></i></div><div><h3>Branches</h3><p>Attia El-Tabakh Street, Braya Tower<br>Next to Sami Abu El-Reesh Restaurant</p></div></div></div>
+            <form class="contact-form" id="contactForm"><div class="form-group"><input type="text" id="name" placeholder="Your Name" required></div><div class="form-group"><input type="email" id="email" placeholder="Your Email" required></div><div class="form-group"><input type="text" id="subject" placeholder="Subject" required></div><div class="form-group"><textarea rows="5" placeholder="Your Message" required></textarea></div><button type="submit" class="btn btn-primary w-100">Send Message <i class="fa-solid fa-paper-plane"></i></button></form>
+        </div></div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer"><div class="container"><div class="footer-top"><div class="footer-col brand-col"><a href="#" class="logo-wrapper"><div class="logo-icon"><span>N</span></div><div class="logo-text">NOUR <span>Store</span></div></a><p>The ultimate destination for premium, stylish, and comfortable kids fashion.</p><div class="social-links"><a href="#"><i class="fa-brands fa-facebook-f"></i></a><a href="#"><i class="fa-brands fa-instagram"></i></a><a href="#"><i class="fa-brands fa-twitter"></i></a><a href="#"><i class="fa-brands fa-pinterest-p"></i></a></div></div>
+    <div class="footer-col"><h3>Quick Links</h3><ul><li><a href="#home">Home</a></li><li><a href="#categories">Categories</a></li><li><a href="#featured">New Collection</a></li><li><a href="#offers">Offers</a></li></ul></div>
+    <div class="footer-col"><h3>Customer Service</h3><ul><li><a href="#">Track Order</a></li><li><a href="#">Returns & Exchanges</a></li><li><a href="#">Size Guide</a></li><li><a href="#">FAQs</a></li></ul></div>
+    <div class="footer-col"><h3>Working Hours</h3><ul class="working-hours"><li><span>Every day:</span> 10:00 AM - 11:00 PM</li><li><span>Friday:</span> 1:00 PM - 1:00 AM</li></ul></div></div>
+    <div class="footer-bottom"><p>&copy; 2025 NOUR Store. All Rights Reserved.</p><div class="payment-methods"><i class="fa-brands fa-cc-visa"></i><i class="fa-brands fa-cc-mastercard"></i><i class="fa-brands fa-cc-paypal"></i><i class="fa-brands fa-cc-apple-pay"></i></div></div></div></footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
